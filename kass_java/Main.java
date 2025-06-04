@@ -25,7 +25,7 @@ public class Main {
            
             byte[] image = new byte[0];
 
-            Product p1 = new Product("Coca Cola", 2500.0, 1, image);
+            Product p1 = new Product("Coca Cola", 2500.0, 1, image,"Drink");
             ProductRepository pRepo = new ProductRepository();
             pRepo.save(p1);
             System.out.println("Product added: " + p1.getName());
