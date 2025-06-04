@@ -46,12 +46,12 @@ public class TableRepository {
         return null;
     }
     
-    // Get all tables with their current status
+    
     public List<Table> getAllTables() {
         return new ArrayList<>(tableList);
     }
     
-    // Get all occupied tables
+    
     public List<Table> getOccupiedTables() {
         List<Table> occupied = new ArrayList<>();
         for (Table table : tableList) {
@@ -62,7 +62,7 @@ public class TableRepository {
         return occupied;
     }
     
-    // Get all available tables
+    
     public List<Table> getAvailableTables() {
         List<Table> available = new ArrayList<>();
         for (Table table : tableList) {
@@ -73,7 +73,7 @@ public class TableRepository {
         return available;
     }
     
-    // Update table status based on order
+    
     public boolean updateTableStatus(String tableName, int orderId, String newStatus) {
         Table table = getByName(tableName);
         if (table != null) {

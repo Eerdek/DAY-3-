@@ -1,7 +1,7 @@
 package kass_java.Model;
 
 public class Bill {
-    
+
     private int mainID;
     private String tableName;
     private String waiterName;
@@ -17,6 +17,4 @@ public class Bill {
         this.status = status;
         this.total = total;
     }
-
-    // Getters...
 }

@@ -13,7 +13,7 @@ public class TableOrderService {
     private final OrderService orderService;
     private final TableRepository tableRepository;
     
-    // Map to keep track of orders by table name
+    
     private final Map<String, List<Integer>> tableOrdersMap = new HashMap<>();
     
     public TableOrderService(OrderService orderService, TableRepository tableRepository) {
@@ -35,11 +35,11 @@ public class TableOrderService {
             return false;
         }
         
-        // Update table status
+        
         table.assignOrder(orderId);
         tableRepository.save(table);
         
-        // Add order to table's order list
+        
         if (!tableOrdersMap.containsKey(tableName)) {
             tableOrdersMap.put(tableName, new ArrayList<>());
         }
@@ -78,14 +78,14 @@ public class TableOrderService {
             return false;
         }
         
-        // Mark order as completed
+        
         order.setStatus("Completed");
         
-        // Remove from active orders for this table
+        
         if (tableOrdersMap.containsKey(tableName)) {
             tableOrdersMap.get(tableName).remove(Integer.valueOf(orderId));
             
-            // If table has no more active orders, release it
+            
             if (tableOrdersMap.get(tableName).isEmpty()) {
                 Table table = tableRepository.getByName(tableName);
                 if (table != null) {

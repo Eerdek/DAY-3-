@@ -14,7 +14,6 @@ public class OrderService {
     private final Map<Integer, Order> orders = new HashMap<>();
     private final ProductRepository productRepository;
 
-    // Constructor with ProductRepository dependency
     public OrderService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
@@ -27,8 +26,7 @@ public class OrderService {
     public int saveOrUpdateOrder(Order order, boolean isHold) {
         Map<String, Object> result = new HashMap<>();
 
-        // Check stock availability before processing the order
-        if (!isHold) { // Only check stock if not on hold
+        if (!isHold) {
             for (OrderItem item : order.getItems()) {
                 Product product = productRepository.getProductById(item.getProductID());
                 if (product == null) {
@@ -70,7 +68,6 @@ public class OrderService {
 
         orders.put(order.getId(), order);
 
-        // Update stock quantities if order is not on hold
         if (!isHold) {
             for (OrderItem item : order.getItems()) {
                 Product product = productRepository.getProductById(item.getProductID());

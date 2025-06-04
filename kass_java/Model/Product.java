@@ -6,14 +6,14 @@ public class Product {
     private double price;
     private int categoryId;
     private byte[] image;
-    private int stockQuantity; // Added stock quantity field
+    private int stockQuantity; 
 
     public Product(String name, double price, int categoryId, byte[] image) {
         this.name = name;
         this.price = price;
         this.categoryId = categoryId;
         this.image = image;
-        this.stockQuantity = 0; // Default stock quantity
+        this.stockQuantity = 0; 
     }
 
     public Product(int id, String name, double price, int categoryId, byte[] image) {
@@ -21,7 +21,7 @@ public class Product {
         this.id = id;
     }
 
-    // Constructor with stock quantity
+    
     public Product(String name, double price, int categoryId, byte[] image, int stockQuantity) {
         this.name = name;
         this.price = price;
@@ -35,7 +35,7 @@ public class Product {
         this.id = id;
     }
 
-    // Getters
+    
     public int getId() { return id; }
     public String getName() { return name; }
     public double getPrice() { return price; }
@@ -43,7 +43,7 @@ public class Product {
     public byte[] getImage() { return image; }
     public int getStockQuantity() { return stockQuantity; }
 
-    // Setters
+    
     public void setId(int id) { this.id = id; }
     public void setStockQuantity(int stockQuantity) { this.stockQuantity = stockQuantity; }
 }
