@@ -40,7 +40,7 @@ public class Main {
                 0, "", "", items
             );
 
-            OrderService orderService = new OrderService();
+            OrderService orderService = new OrderService(pRepo);
             int newOrderId = orderService.saveOrUpdateOrder(order, false);
             System.out.println("Order placed with ID: " + newOrderId);
 
