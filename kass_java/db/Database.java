@@ -21,6 +21,27 @@ public class Database {
     private static Connection con;
 
     public static Connection getConnection() throws SQLException {
-        throw new UnsupportedOperationException("DB холболт идэвхгүй");
+        if (con == null || con.isClosed()) {
+            con = DriverManager.getConnection(CONNECTION_STRING);
+        }
+        return con;
+    }
+
+    public static boolean isConnected() {
+        try {
+            return con != null && !con.isClosed();
+        } catch (SQLException e) {
+            return false;
+        }
+    }
+
+    public static void close() {
+        try {
+            if (con != null && !con.isClosed()) {
+                con.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
