@@ -18,16 +18,15 @@ public class AddCustomerForm {
     }
 
     public List<Driver> getDriverList() {
-    List<Driver> drivers = new ArrayList<>();
-    if (!orderType.equals("Take Away")) {
-        // mock data
-        drivers.add(new Driver(1, "Bat-Erdene"));
-        drivers.add(new Driver(2, "Tuvshinbold"));
-        drivers.add(new Driver(3, "Anujin"));
-    }
-    return drivers;
-}
+        List<Driver> drivers = new ArrayList<>();
+        if (!orderType.equals("Take Away")) {
 
+            drivers.add(new Driver(1, "Bat-Erdene"));
+            drivers.add(new Driver(2, "Tuvshinbold"));
+            drivers.add(new Driver(3, "Anujin"));
+        }
+        return drivers;
+    }
 
     public int getDriverIDByIndex(int index, List<Driver> drivers) {
         if (index >= 0 && index < drivers.size()) {

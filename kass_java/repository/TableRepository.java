@@ -36,4 +36,55 @@ public class TableRepository {
         }
         return null;
     }
+    
+    public Table getByName(String name) {
+        for (Table table : tableList) {
+            if (table.getName().equalsIgnoreCase(name)) {
+                return table;
+            }
+        }
+        return null;
+    }
+    
+    
+    public List<Table> getAllTables() {
+        return new ArrayList<>(tableList);
+    }
+    
+    
+    public List<Table> getOccupiedTables() {
+        List<Table> occupied = new ArrayList<>();
+        for (Table table : tableList) {
+            if (table.getStatus().equals("Occupied")) {
+                occupied.add(table);
+            }
+        }
+        return occupied;
+    }
+    
+    
+    public List<Table> getAvailableTables() {
+        List<Table> available = new ArrayList<>();
+        for (Table table : tableList) {
+            if (table.getStatus().equals("Available")) {
+                available.add(table);
+            }
+        }
+        return available;
+    }
+    
+    
+    public boolean updateTableStatus(String tableName, int orderId, String newStatus) {
+        Table table = getByName(tableName);
+        if (table != null) {
+            table.setStatus(newStatus);
+            if (newStatus.equals("Occupied")) {
+                table.setCurrentOrderId(orderId);
+            } else if (newStatus.equals("Available")) {
+                table.setCurrentOrderId(0);
+            }
+            return save(table) == 1;
+        }
+        return false;
+    }
 }
