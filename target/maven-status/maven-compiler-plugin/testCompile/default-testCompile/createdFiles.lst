@@ -1,0 +1,7 @@
+kass_java\repository\TableRepositoryTest.class
+kass_java\service\CheckoutServiceTest.class
+kass_java\repository\ProductRepositoryTest.class
+kass_java\repository\CategoryRepositoryTest.class
+kass_java\repository\CategoryRepository.class
+kass_java\service\ProductServiceTest.class
+kass_java\service\OrderServiceTest.class
