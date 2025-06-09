@@ -2,9 +2,12 @@ package kass_java.repository;
 
 import java.util.*;
 import kass_java.Model.Product;
-import kass_java.Model.Product;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ProductRepository {
+
+     private static final Logger logger = LogManager.getLogger(ProductRepository.class);
 
     private final List<Product> products = new ArrayList<>();
     private int productIdCounter = 1;
@@ -13,12 +16,12 @@ public class ProductRepository {
         if (product.getId() == 0) {
             product.setId(productIdCounter++);
             products.add(product);
-            System.out.println("NEW PRODUCT: " + product.getName());
+            logger.info("NEW PRODUCT: {}", product.getName());
         } else {
             for (int i = 0; i < products.size(); i++) {
                 if (products.get(i).getId() == product.getId()) {
                     products.set(i, product);
-                    System.out.println("UPDATE PRODUCT: " + product.getName());
+                    logger.info("UPDATE PRODUCT: {}", product.getName());
                     break;
                 }
             }
@@ -32,11 +35,10 @@ public class ProductRepository {
                 return p;
             }
         }
-        System.out.println("NOT FOUND PRODUCT ID: " + id);
+        logger.error("NOT FOUND PRODUCT ID: {}", id);
         return null;
     }
 
-    // ✅ Consistent getters using the same list
     public List<Product> findAll() {
         return new ArrayList<>(products);
     }
