@@ -17,18 +17,23 @@ public class Product {
     }
 
     public Product(int id, String name, double price, int categoryId, byte[] image, String category) {
-       this(name, price, categoryId, image, category);
-       this.id = id;
+        this(name, price, categoryId, image, category);
+        this.id = id;
     }
 
-    public String getCategory() { return category; }
-    public void setCategory(String category) { this.category = category; }
+    // Getters
     public int getId() { return id; }
     public String getName() { return name; }
     public double getPrice() { return price; }
     public int getCategoryId() { return categoryId; }
     public byte[] getImage() { return image; }
+    public String getCategory() { return category; }
 
-    
+    // Setters
     public void setId(int id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
+    public void setPrice(double price) { this.price = price; }
+    public void setCategoryId(int categoryId) { this.categoryId = categoryId; }
+    public void setImage(byte[] image) { this.image = image; }
+    public void setCategory(String category) { this.category = category; }
 }

@@ -59,7 +59,7 @@ void testCompletePaymentFail_NotEnough() {
 
     int orderId = orderService.saveOrUpdateOrder(order, false);
 
-    // 👇 Шинэчилсэн хэсэг
+    //  Шинэчилсэн хэсэг
     assertThrows(IllegalArgumentException.class, () -> {
         checkoutService.completePayment(orderId, item.getAmount(), 1000);
     });
