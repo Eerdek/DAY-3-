@@ -1,0 +1,7 @@
+[2025-06-10 00:06:53] [INFO ] kass_java.MainCLI - Welcome to Kass CLI Product Manager
+[2025-06-10 00:07:14] [WARN ] kass_java.MainCLI - Invalid price.
+[2025-06-10 00:07:25] [INFO ] kass_java.service.ProductService - Added new product: cola (₮200.0)
+[2025-06-10 00:07:25] [INFO ] kass_java.MainCLI - Product added: cola (₮200.0)
+[2025-06-10 00:07:28] [INFO ] kass_java.service.ProductService - Removed product with ID 1
+[2025-06-10 00:07:28] [INFO ] kass_java.MainCLI - Product removed (ID: 1)
+[2025-06-10 00:07:39] [INFO ] kass_java.MainCLI - Exiting CLI. Peace out.
