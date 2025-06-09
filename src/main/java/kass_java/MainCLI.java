@@ -111,7 +111,7 @@ public class MainCLI {
                     break;
 
                 case 0:
-                    logger.info("Exiting CLI. Peace out ✌️");
+                    logger.info("Exiting CLI. Peace out ");
                     return;
 
                 default:
