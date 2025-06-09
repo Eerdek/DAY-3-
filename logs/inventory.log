@@ -5,3 +5,84 @@
 [2025-06-10 00:07:28] [INFO ] kass_java.service.ProductService - Removed product with ID 1
 [2025-06-10 00:07:28] [INFO ] kass_java.MainCLI - Product removed (ID: 1)
 [2025-06-10 00:07:39] [INFO ] kass_java.MainCLI - Exiting CLI. Peace out.
+[2025-06-10 00:11:59] [INFO ] kass_java.MainCLI - Welcome to Kass CLI Product Manager
+[2025-06-10 00:12:09] [INFO ] kass_java.service.ProductService - Added new product: cola (₮2000.0)
+[2025-06-10 00:12:09] [INFO ] kass_java.MainCLI - Product added: cola (₮2000.0)
+[2025-06-10 00:12:23] [INFO ] kass_java.service.ProductService - Added new product: pizza (₮20000.0)
+[2025-06-10 00:12:23] [INFO ] kass_java.MainCLI - Product added: pizza (₮20000.0)
+[2025-06-10 00:12:25] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:12:25] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:12:25] [INFO ] kass_java.service.ProductService - ID: 1, Name: cola, Price: ₮2000.0, Category: drink
+[2025-06-10 00:12:25] [INFO ] kass_java.service.ProductService - ID: 2, Name: pizza, Price: ₮20000.0, Category: food
+[2025-06-10 00:12:48] [INFO ] kass_java.service.ProductService - Updated product ID 2 with new values.
+[2025-06-10 00:12:48] [INFO ] kass_java.MainCLI - Product updated: 2
+[2025-06-10 00:12:50] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:12:50] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:12:50] [INFO ] kass_java.service.ProductService - ID: 1, Name: cola, Price: ₮2000.0, Category: drink
+[2025-06-10 00:12:50] [INFO ] kass_java.service.ProductService - ID: 2, Name: pizza, Price: ₮20000.0, Category: food
+[2025-06-10 00:13:02] [INFO ] kass_java.service.ProductService - Updated product ID 1 with new values.
+[2025-06-10 00:13:02] [INFO ] kass_java.MainCLI - Product updated: 1
+[2025-06-10 00:13:05] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:13:05] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:13:05] [INFO ] kass_java.service.ProductService - ID: 1, Name: cola, Price: ₮2500.0, Category: drink
+[2025-06-10 00:13:05] [INFO ] kass_java.service.ProductService - ID: 2, Name: pizza, Price: ₮20000.0, Category: food
+[2025-06-10 00:13:10] [INFO ] kass_java.service.ProductService - Removed product with ID 1
+[2025-06-10 00:13:10] [INFO ] kass_java.MainCLI - Product removed (ID: 1)
+[2025-06-10 00:13:12] [INFO ] kass_java.service.ProductService - Removed product with ID 2
+[2025-06-10 00:13:12] [INFO ] kass_java.MainCLI - Product removed (ID: 2)
+[2025-06-10 00:13:13] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:13:13] [INFO ] kass_java.service.ProductService - No products available to list.
+[2025-06-10 00:13:15] [INFO ] kass_java.MainCLI - Exiting CLI. Peace out.
+[2025-06-10 00:13:44] [INFO ] kass_java.MainCLI - Welcome to Kass CLI Product Manager
+[2025-06-10 00:13:55] [INFO ] kass_java.service.ProductService - Added new product: cola (₮2000.0)
+[2025-06-10 00:13:55] [INFO ] kass_java.MainCLI - Product added: cola (₮2000.0)
+[2025-06-10 00:14:05] [INFO ] kass_java.service.ProductService - Added new product: pizza (₮20000.0)
+[2025-06-10 00:14:05] [INFO ] kass_java.MainCLI - Product added: pizza (₮20000.0)
+[2025-06-10 00:14:07] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:14:07] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:14:07] [INFO ] kass_java.service.ProductService - ID: 1, Name: cola, Price: ₮2000.0, Category: drink
+[2025-06-10 00:14:07] [INFO ] kass_java.service.ProductService - ID: 2, Name: pizza, Price: ₮20000.0, Category: food
+[2025-06-10 00:14:21] [INFO ] kass_java.service.ProductService - Updated product ID 1 with new values.
+[2025-06-10 00:14:21] [INFO ] kass_java.MainCLI - Product updated: 1
+[2025-06-10 00:14:22] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:14:22] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:14:22] [INFO ] kass_java.service.ProductService - ID: 1, Name: cola, Price: ₮3000.0, Category: drink
+[2025-06-10 00:14:22] [INFO ] kass_java.service.ProductService - ID: 2, Name: pizza, Price: ₮20000.0, Category: food
+[2025-06-10 00:14:28] [INFO ] kass_java.service.ProductService - Removed product with ID 1
+[2025-06-10 00:14:28] [INFO ] kass_java.MainCLI - Product removed (ID: 1)
+[2025-06-10 00:14:30] [WARN ] kass_java.service.ProductService - Attempted to remove product with ID 1 but it was not found
+[2025-06-10 00:14:30] [WARN ] kass_java.MainCLI - Product ID not found: 1
+[2025-06-10 00:14:32] [INFO ] kass_java.service.ProductService - Removed product with ID 2
+[2025-06-10 00:14:32] [INFO ] kass_java.MainCLI - Product removed (ID: 2)
+[2025-06-10 00:14:33] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:14:33] [INFO ] kass_java.service.ProductService - No products available to list.
+[2025-06-10 00:14:35] [INFO ] kass_java.MainCLI - Exiting CLI. Peace out.
+[2025-06-10 00:18:46] [INFO ] kass_java.MainCLI - Welcome to Kass CLI Product Manager
+[2025-06-10 00:19:11] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:19:11] [INFO ] kass_java.service.ProductService - No products available to list.
+[2025-06-10 00:19:18] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:19:18] [INFO ] kass_java.service.ProductService - No products available to list.
+[2025-06-10 00:19:49] [INFO ] kass_java.service.ProductService - Added new product: coffe (₮2000.0)
+[2025-06-10 00:19:49] [INFO ] kass_java.MainCLI - Product added: coffe (₮2000.0)
+[2025-06-10 00:19:51] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:19:51] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:19:51] [INFO ] kass_java.service.ProductService - ID: 1, Name: coffe, Price: ₮2000.0, Category: drink
+[2025-06-10 00:19:54] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:19:54] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:19:54] [INFO ] kass_java.service.ProductService - ID: 1, Name: coffe, Price: ₮2000.0, Category: drink
+[2025-06-10 00:20:24] [INFO ] kass_java.service.ProductService - Added new product: kimbab (₮8000.0)
+[2025-06-10 00:20:24] [INFO ] kass_java.MainCLI - Product added: kimbab (₮8000.0)
+[2025-06-10 00:20:36] [INFO ] kass_java.service.ProductService - Added new product: tsuivan (₮12500.0)
+[2025-06-10 00:20:36] [INFO ] kass_java.MainCLI - Product added: tsuivan (₮12500.0)
+[2025-06-10 00:20:38] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:20:38] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:20:38] [INFO ] kass_java.service.ProductService - ID: 1, Name: coffe, Price: ₮2000.0, Category: drink
+[2025-06-10 00:20:38] [INFO ] kass_java.service.ProductService - ID: 2, Name: kimbab, Price: ₮8000.0, Category: food
+[2025-06-10 00:20:38] [INFO ] kass_java.service.ProductService - ID: 3, Name: tsuivan, Price: ₮12500.0, Category: food
+[2025-06-10 00:20:53] [INFO ] kass_java.service.ProductService - Removed product with ID 3
+[2025-06-10 00:20:53] [INFO ] kass_java.MainCLI - Product removed (ID: 3)
+[2025-06-10 00:20:55] [INFO ] kass_java.MainCLI - Listing all products
+[2025-06-10 00:20:55] [INFO ] kass_java.service.ProductService - Listing all products:
+[2025-06-10 00:20:55] [INFO ] kass_java.service.ProductService - ID: 1, Name: coffe, Price: ₮2000.0, Category: drink
+[2025-06-10 00:20:55] [INFO ] kass_java.service.ProductService - ID: 2, Name: kimbab, Price: ₮8000.0, Category: food
+[2025-06-10 00:21:57] [INFO ] kass_java.MainCLI - Exiting CLI. Peace out.
