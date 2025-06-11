@@ -3,8 +3,6 @@ package kass_java.service;
 import org.junit.jupiter.api.*;
 
 import kass_java.Model.Product;
-import kass_java.service.CheckoutService;
-
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,7 +1,5 @@
 package kass_java.repository;
 
-import kass_java.repository.ProductRepository;
-
 import org.junit.jupiter.api.*;
 
 import kass_java.Model.Product;
