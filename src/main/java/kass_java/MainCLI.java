@@ -185,6 +185,8 @@ public class MainCLI {
                     logger.warn("Unknown choice: {}", choice);
                     System.out.println("Invalid option.");
             }
+
+            scanner.close();
         }
     }
 }

@@ -1,20 +1,19 @@
 package kass_java.Model;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AddCustomerForm {
     private String orderType = "";
     private int driverID = 0;
-    private String cusName = "";
-    private int mainID = 0;
+    // private String cusName = "";
+    // private int mainID = 0;
 
     public AddCustomerForm(String orderType, int driverID, String cusName, int mainID) {
         this.orderType = orderType;
         this.driverID = driverID;
-        this.cusName = cusName;
-        this.mainID = mainID;
+        // this.cusName = cusName;
+        // this.mainID = mainID;
     }
 
     public List<Driver> getDriverList() {

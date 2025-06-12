@@ -1,6 +1,5 @@
 package kass_java.repository;
 
-import kass_java.repository.TableRepository;
 import kass_java.Model.Table;
 
 import org.junit.jupiter.api.*;
